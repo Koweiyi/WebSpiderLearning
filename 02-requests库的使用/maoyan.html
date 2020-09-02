@@ -1,0 +1,2679 @@
+
+<!DOCTYPE html>
+<html class=" android">
+<head>
+  <meta charset="utf-8"/>
+  <link href="//p0.meituan.net" rel="dns-prefetch">
+  <link href="//p1.meituan.net" rel="dns-prefetch">
+  <link href="//mc.meituan.net" rel="dns-prefetch">
+
+<link rel="dns-prefetch" href="//analytics.meituan.net" />
+<link rel="dns-prefetch" href="//h5.dianping.com" />
+  <link rel="canonical" href="https://maoyan.com/" >
+  
+  <title>影院票房_电影购票_评分_选座_经典影视推荐-猫眼电影</title>
+  <meta name="description" content='猫眼电影是国内观众喜爱的观影平台，为您提供了在线购票服务。同时，猫眼电影还为您提供电影预告片、票房查询、电影排行榜、影视资讯等信息.'>
+  <meta name="keywords" content='电影,电影购票,电影选座,影院选票,影院购票,电影评分,猫眼电影'>
+  <meta name="baidu-site-verification" content="lxgZbG0NVn" />
+  <meta name="applicable-device" content="mobile">
+  <!--// apple Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=504274740, app-argument=meituanmovie://www.meituan.com/">
+  <script type="text/javascript">
+    window.$browser = undefined; // 这里要加  | dumpToInlineScript 是因为njk模版输出安全考虑
+    window.$channelId = 4;
+  </script>
+  <script type="text/javascript">
+      window._jsonFlat = function(obj) {
+       if (!obj) {
+         return null;
+       }
+       let result = {};
+       function recurse(data, prop) {
+         let lowerProp = prop.toLowerCase().replace(/\-/g, '_'); //小写的key 神策只支持全小写的自定义属性key，并且不支持 - 
+         let toString = Object.prototype.toString;
+         if (toString.call(data) === '[object Object]') {
+           let isEmpty = true;
+           for (let p in data) {
+             isEmpty = false;
+             if (p.indexOf('_') !== 0) { // 排除掉以 "_" 开头的字段 因为神策不支持_开头的
+               recurse(data[p], p);
+             }
+           }
+           if (isEmpty && lowerProp) { //当data不是{}并且prop不是""时，才对result操作
+             result[lowerProp] = '{}';
+           }
+         } else {
+            lowerProp = lowerProp || 'noname_key'; //给一个默认的key名
+            result[lowerProp] = toString.call(data) === '[object String]' ? data : JSON.stringify(data); //所有非string的value都转成string
+         }
+       }
+       //立即执行
+       recurse(obj, '');
+       return result;
+     }
+
+    ;(function (para) {
+      var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+      w['sensorsDataAnalytic201505'] = n;
+      w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+      var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 	'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 	'identify','login','logout','trackLink','clearAllRegister'];
+      for (var i = 0; i < ifs.length; i++) {
+        w[n][ifs[i]] = w[n].call(null, ifs[i]);
+      }
+      if (!w[n]._t) {
+        x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+        x.async = 1;
+        x.src = p;
+        w[n].para = para;
+        y.parentNode.insertBefore(x, y);
+      }
+    })({
+      sdk_url: 'https://s0.meituan.net/bs/?f=myfe/canary:/sensorsdata.min-1.14.22.js',
+      heatmap_url: 'https://s0.meituan.net/bs/?f=myfe/canary:/sensorsdata.heatmap.min-1.14.22.js',
+      name: 'sensors',
+      server_url: !false ? 'https://sensor.maoyan.com/sa?project=new_maoyan' : 'https://sensor.maoyan.com/sa?project=new_maoyan_test',
+      heatmap: {
+        // 是否开启点击图，默认 default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭
+        // 默认只采集这些交互元素（ a input button textarea ）, 采集自定义元素的 $WebClick 事件参看https://manual.sensorsdata.cn/sa/latest/page-1573964.html
+        clickmap: 'not_collect', //关闭自动采集点击事件
+      },
+      is_track_single_page: true, //表示是否开启单页面自动采集 $pageview 功能，SDK 会在 url 改变之后自动采集web页面浏览事件 $pageview。
+      //是否开启触达注意力图，默认 not_collect 表示关闭，不会自动采集 $WebStay 事件，可以设置 'default' 表示开启
+      scroll_notice_map:'not_collect',
+      show_log: false, //是否在控制台打印logger
+      // use_app_track: true, //打通app和h5
+      batch_send: true, //批量发送数据，非实时：必须加，不然会引起客户端的一直loading
+    });
+    
+    sensors.registerPage(_jsonFlat({
+      platform_type: 'h5',
+      channel_id: 4,
+      page_id: undefined
+    }));
+    var user = undefined;
+    if (user && user.id) {
+      sensors.login(user.id, function() {
+        var mobile = user.mobile;
+        mobile && sensors.setProfile({
+          phoneNumber: mobile
+        });
+      });
+    }
+  </script>
+  
+    <meta http-equiv="Content-Security-Policy" content="default-src js://* wx.qlogo.cn thirdwx.qlogo.cn *.tanx.com *.mmstat.com *.meituan.com www.dpfile.com *.sankuai.com *.wandafilm.com https://i.meituan.com/ https://m.dianping.com/ https://ebsnew.boc.cn https://ms0.meituan.com https://mc0.meituan.com https://mpay.meituan.com 192.168.4.223:9999 *.maoyan.com https://*.meituan.com https://*.sankuai.com https://*.meituan.net http://*.meituan.net www.google-analytics.com wvjbscheme://* imeituan://* *.dianping.com *.dpfile.com *.51ping.com mymonitor.movie.dev.sankuai.com http://res.wx.qq.com https://res.wx.qq.com open.weixin.qq.com ytscheme://* alipaybridge://* alipaymonitor://* pub.idqqimg.com *.qianbao.qq.com *.qq.com c.mipcdn.com *.baidu.com wx.tenpay.com *.gtimg.cn validate-ocean.sankuai.com open.95516.com jsbridge://* 'self' 'unsafe-inline' 'unsafe-eval' mqqapi://* blob: gap: data:;">
+  
+  
+  
+  
+  <script>
+  "use strict";!function(){var i=0<arguments.length&&void 0!==arguments[0]?arguments[0]:"_Owl_",n=window;n[i]||(n[i]={isRunning:!1,isReady:!1,preTasks:[],dataSet:[],use:function(i,t){this.isReady&&n.Owl&&n.Owl[i](t),this.preTasks.push({api:i,data:[t]})},add:function(i){this.dataSet.push(i)},run:function(){var t=this;if(!this.isRunning){this.isRunning=!0;var i=n.onerror;n.onerror=function(){this.isReady||this.add({type:"jsError",data:arguments}),i&&i.apply(n,arguments)}.bind(this),(n.addEventListener||n.attachEvent)("error",function(i){t.isReady||t.add({type:"resError",data:[i]})},!0)}}},n[i].run())}();
+  </script>
+  <script crossorigin="anonymous" src="//www.dpfile.com/app/owl/static/owl_1.7.20.js"></script>
+  <script>
+  Owl.start({
+    project: 'canary',
+    pageUrl: location.href.split('?')[0].replace(/\/\d+/g, '/:id'),
+    resource: {
+      delay: 2000,
+    },
+    
+  });
+  </script>
+  <script crossorigin="anonymous" src="//s0.meituan.net/bs/?f=myfe/canary:/yao-0.0.10.js"></script>
+  <script>
+   Yao.start({
+     project:'canary',
+     page: {
+       sample: 1
+     },
+     
+   })
+  </script>
+  <script type="text/javascript">
+    window.browser = "chrome";
+    window.platform = "android";
+    window.version = "85.0.4183";
+    window.channelId = 4;
+    window.channelName = "canary";
+    window.hostEnvironment = null;
+  </script>
+  
+<script type="text/javascript">
+  if(location.pathname === '/'){
+    var queryMap = {};
+    var hashStr = location.hash;
+    var queryStr = location.search;
+    var generateQueryMap = function(str){
+      str.replace(/\?|#/g, '').split('&').map(function (queryItem){
+        queryItem = queryItem.split('=');
+        queryMap[queryItem[0]] = queryItem[1];
+      })
+    };
+    var getQueryValue = function(k){
+      return queryMap[k]? queryMap[k]: '';
+    };
+    var leftpad = function(s, num, placeholder){
+      s = String(s);
+      while(s.length<num){
+        s = placeholder+s;
+      }
+      return s;
+    };
+    if(queryStr){
+      generateQueryMap(queryStr);
+    }
+    if(hashStr){
+      generateQueryMap(hashStr);  // hash 优先级较高，如果出现和query中 key相同的会将query中的替换掉
+    }
+    var linkMap = {
+      'showcinemas': '/cinema/movie/'+ getQueryValue('movieid') +'?_v_=yes',
+      'showtime': '/shows/'+ getQueryValue('cinemaid') +'?_v_=yes&movieid='+ getQueryValue('movieid') +'&date='+ getQueryValue('date'),
+      'seats': '/seats/'+ getQueryValue('showDate').replace(/-/g,'') + leftpad(getQueryValue('showId'), 7, '0') +'?_v_=yes',
+      'buy': '/createOrder/'+ getQueryValue('id') +'?_v_=yes',
+      'changecity': '/city?_v_=yes',
+      'comment': '/replies/' + getQueryValue('id') + '?_v_=yes'
+    };
+    if(queryMap.tmp){
+      location.href = linkMap[queryMap.tmp] || '/?_v_=yes'
+    }
+  }
+</script>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+  
+
+
+  <link rel="stylesheet" href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/common.33c25dd3.css" />
+  <link href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/theme.ee108412.css" rel="stylesheet" />
+
+
+  
+<style id="fontface">
+</style>
+  
+  <link rel="stylesheet" href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/index-seo.be2ac138.css" />
+  <script>
+    window.type =  "movie";
+    window.brandId = ""
+  </script>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name='apple-touch-fullscreen' content='yes'>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="icon" href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/icon/faviconmy.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57"
+        href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/startup/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120"
+        href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/startup/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="196x196"
+        href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/startup/apple-touch-icon-196x196-precomposed.png">
+  <link rel="apple-touch-startup-image"
+        href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/startup/apple-touch-startup-image-640x1096.png"
+        media="(device-height:568px)">
+  <link rel="apple-touch-startup-image"
+        href="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/startup/apple-touch-startup-image-640x920.png"
+        media="(device-height:480px)">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  
+  <style type="text/css">
+    a {
+      cursor: pointer;
+    }
+  </style>
+  
+  
+
+<script>
+  window.cid = "";
+  window.uid = "";
+  window._token = "";
+  window.appnm = "maoyan_i";
+  window.cooperateMode = "false";
+  window.openPlatform = false;
+  window.openPlatformSub = false;
+  window.icbcback = false;
+  window.mtLite = false;
+  
+  window.val = {};
+  // 灵犀埋点加入mtsi-flag
+  window.val = Object.assign({}, {
+    'mtsi-flag': "0",
+  }, window.val);
+  window.val.custom = Object.assign({}, {
+    '__browser__': "chrome",
+  }, window.val.custom)
+</script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/js/dpmmweb.mta.min.985c08ba.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  var g_timepoint_head = Date.now();
+  </script>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?703e94591e87be68cc8da0da7cbd0be2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+
+
+
+  <header class="navbar  ">
+    <div class="nav-wrap-left">
+        <a class="back"  href="#" onClick="javascript: window.history.back();return false;"><i class="icon-back"></i></a>
+    </div>
+    <span class="nav-header">猫眼电影</span>
+    <div class="nav-wrap-right">
+      <div class="nav-button">
+        <img class="nav-icon" src="//p0.meituan.net/scarlett/f05f61e7a8f3f45fd071c068d7a26870356.png"/>
+      </div>
+    </div>
+  </header>
+  <div class="nav-list" style="display: none">
+    <div class="nav-item"><a href="/">首页</a></div>
+    <div class="nav-item"><a href="/board/7">榜单</a></div>
+    <div class="nav-item"><a href="/information">热点</a></div>
+    <div class="nav-item"><a href="/mmall/store">商城</a></div>
+  </div>
+  <div class="body" style="display: block;">
+
+
+<a id="download-header" data-to=https://deeplink.maoyan.com/maoyan-app/app?channel=mymovie1yuan-dy data-cid="c_dmLad" data-bid="b_53up23as" data-lab='{"position":"home", "utm_content": "", "utm_source": ""}'>
+  <div class="download-app-bar">
+      <h1><img class="img noneBg logo" alt="logo" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png" width="42" height="42"></h1>
+    <div class="app-name-desc"><div class="app-name">猫眼</div><div class="app-desc">在线选座，热门影讯，爱上看电影</div></div>
+    <div class="btn-open-app">打开App</div>
+  </div>
+</a>
+<a id="download-tip" class="tip-open-app" data-to=https://deeplink.maoyan.com/maoyan-app/app?channel=mymovie1yuan-dy data-cid="c_dmLad" data-bid="b_53up23as" data-lab='{"position":"bottom", "utm_content": "", "utm_source": ""}'>
+  <img src="http://p1.meituan.net/scarlett/87654d5e4e5e057206969c3abb8e09f33151.png" alt="" />
+  <div>打开App</div>
+</a>
+<section class="topbar">
+	  <div class="white-bg topbar-bg ">  
+        <div class="city-entry">
+          <span class="city-name">天津</span><i class="city-entry-arrow"></i>
+        </div>
+        <div class="switch-hot" data-active=".n-hot">
+            <div class="hot-item active" data-tab=".n-hot">热映</div>
+            <div class="hot-item" data-tab=".cinema">影院</div>
+            <div class="hot-item" data-tab=".f-hot">待映</div>
+            <div class="hot-item" data-tab=".classic">经典电影</div>
+        </div>
+        <div class="search-entry search-icon" data-type="movie"></div>
+    </div>
+</section>
+<section data-page=".movie" class="movie singleton page active">
+	<div class="page-wrap n-hot active">
+		<div class="swiper-header movie-ad">
+		</div>
+		<div class="tab-block">
+			<div class="tab-content">
+				<div class="page n-hot" data-hot=".n-hot" data-cid="c_dmLad">
+          <div id="top-rated-wrap">
+<div class="top-rated">
+  <p class="title">最受好评电影</p>
+  <div class="top-rated-list">
+    <div class="top-rated-item" data-id=346210 >
+      <a href="/movie/346210">
+        <div class="poster default-img-bg">
+          <img src=https://p1.meituan.net/170.230/moviemachine/a448ca6a5f4dafb88067722303ca0cfd96002.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">9.2</span></span>
+        </div>
+        <h5 class="name line-ellipsis">八佰</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1284572 >
+      <a href="/movie/1284572">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/27e15446e9e4999fa54bbad940b5a8363531802.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">9.2</span></span>
+        </div>
+        <h5 class="name line-ellipsis">1/2的魔法</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=3606 >
+      <a href="/movie/3606">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/4755165ffd65eb737bb5160ea911e0fa343438.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">9.2</span></span>
+        </div>
+        <h5 class="name line-ellipsis">哈利·波特与魔法石</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=416 >
+      <a href="/movie/416">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/c2496a7290a72eac6081321898c347693550574.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">9</span></span>
+        </div>
+        <h5 class="name line-ellipsis">盗梦空间</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=338059 >
+      <a href="/movie/338059">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/f0eb865d1cf85d3f939baaf3f9a44c251442128.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">8.8</span></span>
+        </div>
+        <h5 class="name line-ellipsis">电力之战</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1230199 >
+      <a href="/movie/1230199">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/movie/cdb164c203fc0c2465278ddd165e91c84503798.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">8.8</span></span>
+        </div>
+        <h5 class="name line-ellipsis">小妇人</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1203109 >
+      <a href="/movie/1203109">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/1870002aa30fb07d9358ad8a402a69528015987.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">8.5</span></span>
+        </div>
+        <h5 class="name line-ellipsis">魔发精灵2</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=489894 >
+      <a href="/movie/489894">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/7e6118993dbf0f304ac1dad4667fddda207318.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">7.8</span></span>
+        </div>
+        <h5 class="name line-ellipsis">我在时间尽头等你</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1218159 >
+      <a href="/movie/1218159">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/movie/396a1e77ff4ef838a1c697ffbc71a8bb2730189.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="score">观众评分&nbsp;&nbsp;<span class="rated-score">5.2</span></span>
+        </div>
+        <h5 class="name line-ellipsis">荞麦疯长</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1297973 >
+      <a href="/movie/1297973">
+        <div class="poster default-img-bg">
+          <img src=https://p0.meituan.net/170.230/moviemachine/40d1e5ac176f1e9258da10a3222dbff7952117.png  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="wish"><span class="wish-num">46678</span>人想看</span>
+        </div>
+        <h5 class="name line-ellipsis">信条</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1299144 >
+      <a href="/movie/1299144">
+        <div class="poster default-img-bg">
+          <img src=https://p1.meituan.net/170.230/movie/41d222686f37e7b6b312079e8a4651f22058796.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="wish"><span class="wish-num">8217</span>人想看</span>
+        </div>
+        <h5 class="name line-ellipsis">阿里巴巴与神灯</h5>
+      </a>
+    </div>
+    <div class="top-rated-item" data-id=1215300 >
+      <a href="/movie/1215300">
+        <div class="poster default-img-bg">
+          <img src=https://p1.meituan.net/170.230/movie/1818ce14669a901792c052caf048475a640420.jpg  onerror="this.style.visibility='hidden'">
+          <span class="wish-bg"></span>
+            <span class="wish"><span class="wish-num">25001</span>人想看</span>
+        </div>
+        <h5 class="name line-ellipsis">假面饭店</h5>
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+					<div class="list-wrap" data-movie-ids="346210,489894,1297973,1284572,416,3606,1230199,338059,1299144,1218159,1215300,1203109,1358352,1297911,1301478,1250729,1243792,1218273,78341,1280654,1203734,1218157,345810,341890,1225993,342068">
+					 
+	<div class="item" data-id="346210" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p1.meituan.net/moviemachine/a448ca6a5f4dafb88067722303ca0cfd96002.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v2dimax_title">八佰</div>
+          
+            <span class="version v2d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">9.2</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 王千源,张译,姜武</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天88家影院放映1386场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="346210">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="489894" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/7e6118993dbf0f304ac1dad4667fddda207318.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">我在时间尽头等你</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">7.8</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 李鸿其,李一桐,范伟</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天85家影院放映428场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="489894">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1297973" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/40d1e5ac176f1e9258da10a3222dbff7952117.png@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v2dimax_title">信条</div>
+          
+            <span class="version v2d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">46667</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 约翰·大卫·华盛顿,罗伯特·帕丁森,伊丽莎白·德比茨基</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">2020-09-04 本周五上映</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1297973">
+        
+          <div class="btn pre" data-id="1297973"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1284572" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/27e15446e9e4999fa54bbad940b5a8363531802.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v3dimax_title">1/2的魔法</div>
+          
+            <span class="version v3d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">9.2</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 汤姆·赫兰德,克里斯·帕拉特,茱莉亚·路易斯-德瑞弗斯</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天50家影院放映126场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1284572">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="416" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/c2496a7290a72eac6081321898c347693550574.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v2dimax_title">盗梦空间</div>
+          
+            <span class="version v2d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">9.0</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 莱昂纳多·迪卡普里奥,渡边谦,约瑟夫·高登-莱维特</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天64家影院放映157场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="416">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="3606" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/4755165ffd65eb737bb5160ea911e0fa343438.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v3dimax_title">哈利·波特与魔法石</div>
+          
+            <span class="version v3d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">9.2</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 丹尼尔·雷德克里夫,鲁伯特·格林特,艾玛·沃特森</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天43家影院放映92场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="3606">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1230199" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/cdb164c203fc0c2465278ddd165e91c84503798.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">小妇人</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">8.8</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 西尔莎·罗南,艾玛·沃特森,佛罗伦斯·珀</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天52家影院放映126场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1230199">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="338059" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/f0eb865d1cf85d3f939baaf3f9a44c251442128.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">电力之战</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">8.8</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 本尼迪克特·康伯巴奇,迈克尔·珊农,汤姆·赫兰德</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天29家影院放映48场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="338059">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1299144" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p1.meituan.net/movie/41d222686f37e7b6b312079e8a4651f22058796.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v3d_title">阿里巴巴与神灯</div>
+          
+            <span class="version v3d"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">8217</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 杨进,周杭,丁莹莹</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">2020-09-05 本周六上映</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1299144">
+        
+          <div class="btn pre" data-id="1299144"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1218159" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/396a1e77ff4ef838a1c697ffbc71a8bb2730189.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">荞麦疯长</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">5.2</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 马思纯,钟楚曦,黄景瑜</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天35家影院放映59场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1218159">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1215300" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p1.meituan.net/movie/1818ce14669a901792c052caf048475a640420.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">假面饭店</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">25001</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 木村拓哉,长泽雅美,小日向文世</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">2020-09-04 本周五上映</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1215300">
+        
+          <div class="btn pre" data-id="1215300"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+	<div class="item" data-id="1203109" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/1870002aa30fb07d9358ad8a402a69528015987.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v3d_title">魔发精灵2</div>
+          
+            <span class="version v3d"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="score line-ellipsis"> 
+                <span class="score-suffix">观众评 </span>
+                <span class="grade">8.5</span>
+              </div>
+            
+          
+
+           
+            <div class="actor line-ellipsis">主演: 安娜·肯德里克,贾斯汀·汀布莱克,蕾切尔·布鲁姆</div>
+          
+
+          
+                
+           
+            <div class="show-info line-ellipsis">今天16家影院放映23场</div>
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1203109">
+        
+          <div class="btn normal"><span class="fix" data-bid="dp_wx_home_movie_btn">购票</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+ 
+
+ 
+
+					</div>
+					<div class="more"></div>
+						<div class="hot-celebrities">
+							<p class="title">热门影人</p>
+							<div class="hot-celebrities-list">
+  <div class="celebrity-item">
+    <a href="/celebrity/6463">
+      <img class="celebrity-img" src="https://p1.meituan.net/170.230/movie/4c34e0f0d1393532043634f5faf6647643573.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">汤姆·赫兰德</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/388199">
+      <img class="celebrity-img" src="https://p1.meituan.net/movie/34eeb0e741b1780b90e74cf9bc2d944b39704.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">本尼迪克特·康伯巴奇</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/1028673">
+      <img class="celebrity-img" src="https://p0.meituan.net/movie/8b876e025aa16d5c0751cb674512af00168358.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">张宥浩</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/354024">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/60b4c934c4db7133e7200b1c9d39d73d22220.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">魏晨</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/28207">
+      <img class="celebrity-img" src="https://p0.meituan.net/movie/3a4d1251405e7cce3072c4daa397bc7943660.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">黄晓明</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/28190">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/1c0f7955daf90bf47fd56440cd0b02af40239.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">郑恺</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/3389">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/542739aaafb0cee87760212c8727bd2f148060.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">杜淳</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/29253">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/6ab155dacaccf758bbd5e9062e364e4b38163.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">李晨</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/354021">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/269c9ce921839e34a28dbf88f451299c36850.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">欧豪</h5>
+    </a>
+  </div>
+  <div class="celebrity-item">
+    <a href="/celebrity/28902">
+      <img class="celebrity-img" src="https://p0.meituan.net/moviemachine/e0539cfefe239eacd35e0584509ba1b670587.jpg"  onerror="this.style.visibility='hidden'" />
+      <h5 class="name line-ellipsis">梁静</h5>
+    </a>
+  </div>
+							</div>
+						</div>
+						<div class="hot-news">
+							<p class="title">娱乐热点</p>
+							<div class="hot-news-list">
+  <div class="news-item">
+    <a href="/news/1021090"><p>1.&nbsp;木村拓哉×松隆子20余年银幕情侣 电影《假面饭店》中再度同框</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/947010"><p>2.&nbsp;《信条》曝“高分好评”版预告片 外媒盛赞“诺兰最佳”</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/961819"><p>3.&nbsp;《小妇人》细节彰显奥斯卡品质 口碑佳作观众组团二刷</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/947007"><p>4.&nbsp;抗战影片《芙蓉渡》斩获国际电影节大奖 将蓄势待发热血上映</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/997007"><p>5.&nbsp;《海底小纵队》首部电影见证新吉尼斯纪录 全国五城巡游完美收官</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/997006"><p>6.&nbsp;开学在即，欢乐继续！《阿里巴巴与神灯》全国超前点映最后一天</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/997005"><p>7.&nbsp;《白色月光》疑曝光第二部剧情  李银河感慨女性困境</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/947000"><p>8.&nbsp;《大明女镖师》带你踏破铁马冰河 共赴绝色江湖之旅</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/912657"><p>9.&nbsp;《新愚公移山》电影下乡 神话新编致敬扶贫一线的“愚公”们</p></a>
+  </div>
+  <div class="news-item">
+    <a href="/news/917633"><p>10.&nbsp;《无名之辈》之后，又一部小人物黑马电影来了</p></a>
+  </div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  <div class="page-wrap cinema">
+    <div class="swiper-header cinema-ad"></div>
+    <div class="tab-block">
+      <div class="tab-content">
+        <div class="page cinema" data-hot=".cinema">
+
+
+<div class="close-tab"></div>
+<div class="nav-wrap filter-nav-wrap">
+	<div class="tab mb-line-b">
+		<div class="item" data-tab=".region">全城<i class="drop"></i></div>
+		<div class="item" data-tab=".brand">品牌<i class="drop"></i></div>
+        <div class="item" data-tab=".special">特色<i class="drop"></i></div>
+	</div>
+    <div class="close-tab">
+        <div class="tab-content">
+            <div class="page region" data-bid="dp_wx_home_select_area">
+            </div>
+        </div>
+    </div>
+</div>
+          <div class="cinema-list" data-cid="c_5ovvtlp2">
+            <div class="list-wrap">
+
+    <a href="/shows/24219">
+      <div class="item mb-line-b" data-id="24219" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>中影国际影城（津南永旺店）</span>
+              <span class="price-block">
+                <span class="price">33</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">津南区辛庄镇永旺梦乐购物中心3层</div>
+                <div class="distance">22.6km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+                    <div class="hallType">CGS中国巨幕厅</div>
+                    <div class="hallType">杜比全景声厅</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单2张最高立减6元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/17124">
+      <div class="item mb-line-b" data-id="17124" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>大地影院（远洋未来汇店）</span>
+              <span class="price-block">
+                <span class="price">36</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区津塘公路7016号远洋未来汇四楼南侧</div>
+                <div class="distance">23.2km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减10元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/24552">
+      <div class="item mb-line-b" data-id="24552" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>中晟国际影城</span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">东丽区军粮城示范镇中街商业广场1号楼3层</div>
+                <div class="distance">24.3km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减2元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/14050">
+      <div class="item mb-line-b" data-id="14050" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>CGV影城（于家堡IMAX店）</span>
+              <span class="price-block">
+                <span class="price">38</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区新华路3678号宝风大厦北裙房1-6层</div>
+                <div class="distance">24.8km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="vipTag">折扣卡</div>
+                    <div class="hallType">IMAX厅</div>
+                    <div class="hallType">60帧厅</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，9.9元起开卡</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/987">
+      <div class="item mb-line-b" data-id="987" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>塘沽大剧院</span>
+              <span class="price-block">
+                <span class="price">33</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区中心路7号</div>
+                <div class="distance">24.9km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="allowRefund">退</div>
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                    <div class="hallType">巨幕厅</div>
+            </div>
+ 
+<div class="discount-block">
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/25080">
+      <div class="item mb-line-b" data-id="25080" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>中影幕森国际影城（金街中国巨幕店）</span>
+              <span class="price-block">
+                <span class="price">30</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区解放路金元宝东方广场五楼507号</div>
+                <div class="distance">25.6km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="allowRefund">退</div>
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+                    <div class="hallType">CGS中国巨幕厅</div>
+                    <div class="hallType">杜比全景声厅</div>
+                    <div class="hallType">4D厅</div>
+                    <div class="hallType">巨幕厅</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减2元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/13817">
+      <div class="item mb-line-b" data-id="13817" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>时代凤凰国际影城</span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区新港路新华桥南侧（宝龙城宝龙城市广场4F-012）</div>
+                <div class="distance">25.6km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="allowRefund">退</div>
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减4元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/8840">
+      <div class="item mb-line-b" data-id="8840" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>大地影院（渔夫码头广场店）</span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">西青区大寺镇赛达大道与芦北路交口渔夫码头休闲广场4楼</div>
+                <div class="distance">25.7km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减10元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/24633">
+      <div class="item mb-line-b" data-id="24633" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>万达影城（滨海DOLBY影院）</span>
+              <span class="price-block">
+                <span class="price">39</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区自贸试验区（中心商务区）洞庭湖4572号滨海万达广场四层</div>
+                <div class="distance">26.1km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="allowRefund">退</div>
+                  <div class="endorse">改签</div>
+                  <div class="vipTag">折扣卡</div>
+                    <div class="hallType">Dolby Cinema厅</div>
+                    <div class="hallType">儿童厅</div>
+                    <div class="hallType">4D厅</div>
+            </div>
+ 
+<div class="discount-block">
+</div>        </div>
+
+      </div>
+    </a>
+    <a href="/shows/26089">
+      <div class="item mb-line-b" data-id="26089" data-bid="dp_wx_home_cinema_list">
+        <div class="title-block box-flex middle">
+          <div class="title line-ellipsis">
+            <span>大地影院（秀谷商业广场店）</span>
+              <span class="price-block">
+                <span class="price">34</span><span class="q">元起</span>
+              </span>
+          </div>
+          <div class="location-block box-flex">
+              <div class="flex line-ellipsis">滨海新区塘沽津塘公路1168号秀谷商业广场4层</div>
+                <div class="distance">26.2km</div>
+          </div>
+          <div class="flex"></div>
+            <div class="label-block">
+                  <div class="endorse">改签</div>
+                  <div class="snack">小吃</div>
+                  <div class="vipTag">折扣卡</div>
+                    <div class="hallType">杜比全景声厅</div>
+                    <div class="hallType">4D厅</div>
+            </div>
+ 
+<div class="discount-block">
+    <div>
+      <div class="discount-label normal card">
+        <img src="//p1.meituan.net/scarlett/ff1c6e33ed0ac3cd862910a83d4bf959583.png" />
+      </div>
+      <div class="discount-label-text">开卡特惠，首单1张最高立减10元</div>
+    </div>
+</div>        </div>
+
+      </div>
+    </a>
+            </div>
+            <div class="more"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap f-hot">
+    <div class="swiper-header movie-ad">
+    </div>
+    <div class="tab-block">
+      <div class="tab-content">
+        <div class="page f-hot" data-hot=".f-hot" data-cid="c_3j5p10oz">
+          <div class="list-wrap">
+            <div class="most-expected">
+              <p class="title">近期最受期待</p>
+              <div class="most-expected-list">
+                
+  
+    <div class="expected-item" data-id=1211269 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/moviemachine/da8024493c8142c0949f8b72d43934c0351577.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">1172829</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1211269 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">姜子牙</h5>
+      <p class="date">10月1日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1217123 >
+      <div class="poster default-img-bg">
+        <img src="https://p1.meituan.net/moviemachine/e84f5495a1ec7f87194c9057feb5a15a504112.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">455030</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1217123 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">夺冠</h5>
+      <p class="date">9月30日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1328712 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/movie/7c2e5b01ac07afe62bb9af4e01c71cdb946740.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">170512</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1328712 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">我和我的家乡</h5>
+      <p class="date">10月1日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1298859 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/movie/41a0f9b2c5dd2b3ed0ad570482fb505d4662219.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">167166</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1298859 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">木兰：横空出世</h5>
+      <p class="date">10月1日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1297973 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/moviemachine/40d1e5ac176f1e9258da10a3222dbff7952117.png@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">46667</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1297973 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">信条</h5>
+      <p class="date">9月4日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1215300 >
+      <div class="poster default-img-bg">
+        <img src="https://p1.meituan.net/movie/1818ce14669a901792c052caf048475a640420.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">25001</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1215300 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">假面饭店</h5>
+      <p class="date">9月4日</p>
+    </div>
+  
+    <div class="expected-item" data-id=342325 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/movie/1a8fb14251e4e8b0578eeed69704b9584993617.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">16849</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=342325 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">闺蜜心窍</h5>
+      <p class="date">9月4日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1219866 >
+      <div class="poster default-img-bg">
+        <img src="https://p1.meituan.net/movie/54a4813c153c026128ac5a8c30a808943117022.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">16495</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1219866 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">通往春天的列车</h5>
+      <p class="date">9月17日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1302281 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/moviemachine/1d2b4985d0187b437d41a73994ba2e191607376.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">11978</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1302281 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">奇妙王国之魔法奇缘</h5>
+      <p class="date">10月1日</p>
+    </div>
+  
+    <div class="expected-item" data-id=1332663 >
+      <div class="poster default-img-bg">
+        <img src="https://p0.meituan.net/movie/2013e13bd436f1af9b9ea11b7f4b22154141600.jpg@1l_1e_1c_170w_230h"  onerror="this.style.visibility='hidden'">
+        <span class="wish-bg"></span>
+        <span class="wish"><span class="wish-num">10263</span>人想看</span>
+        <div class="toggle-wish" data-wishst=0 data-movieid=1332663 >
+          <span></span>
+        </div>
+      </div>
+      <h5 class="name line-ellipsis">海底小纵队：火焰之环</h5>
+      <p class="date">10月1日</p>
+    </div>
+  
+
+              </div>
+            </div>
+            <div class="coming-list">
+               
+  <div>
+    <p class="group-date">9月4日 周五</p>
+     
+      <div class="item" data-id="1297973" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/40d1e5ac176f1e9258da10a3222dbff7952117.png@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v2dimax_title">信条</div>
+          
+            <span class="version v2d imax"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">46678</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 约翰·大卫·华盛顿,罗伯特·帕丁森,伊丽莎白·德比茨基</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-04上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1297973">
+        
+          <div class="btn pre" data-id="1297973"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="1215300" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p1.meituan.net/movie/1818ce14669a901792c052caf048475a640420.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">假面饭店</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">25001</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 木村拓哉,长泽雅美,小日向文世</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-04上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1215300">
+        
+          <div class="btn pre" data-id="1215300"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="342325" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/1a8fb14251e4e8b0578eeed69704b9584993617.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">闺蜜心窍</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">16849</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 金晨,姜潮,朱璇</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-04上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="342325">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=342325 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="1358352" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/8d157177b89861caa42905c192ed05711630386.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">谁说我们不会爱2</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">2154</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 王栎鑫,潘时七,彭波</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-04上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1358352">
+        
+          <div class="btn pre" data-id="1358352"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+  </div>
+ 
+  <div>
+    <p class="group-date">9月5日 周六</p>
+     
+      <div class="item" data-id="1299144" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p1.meituan.net/movie/41d222686f37e7b6b312079e8a4651f22058796.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis v3d_title">阿里巴巴与神灯</div>
+          
+            <span class="version v3d"></span>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">8217</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 杨进,周杭,丁莹莹</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-05上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1299144">
+        
+          <div class="btn pre" data-id="1299144"><span class="fix" data-bid="dp_wx_home_movie_btn">预售</span></div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="1283507" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/5d83f339e42875108a2c0f39580c8fdb118115.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">半条被子</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">1200</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 万斯佳,李凤鸣,李嘉明</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-05上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1283507">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=1283507 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+  </div>
+ 
+  <div>
+    <p class="group-date">9月8日 周二</p>
+     
+      <div class="item" data-id="1204228" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/b9e5cf4fcdf5247919476b35eab43f1d1216929.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">你是最美</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">98</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 马元,王嘉</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-08上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1204228">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=1204228 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+  </div>
+ 
+  <div>
+    <p class="group-date">9月10日 周四</p>
+     
+      <div class="item" data-id="1307132" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/movie/4ac79d270ca721faf5dd366ba996f46a832427.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">未知嫌疑人</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">1090</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 罗伯托·埃斯科巴,玛丽亚·加维拉,克里斯蒂娜·莉莉</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-10上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1307132">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=1307132 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="1337937" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/464ea0b89ea8265c2b18c4c3ebe5f8274585629.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">新愚公移山</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">919</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-10上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1337937">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=1337937 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+      <div class="item" data-id="1359278" data-bid="dp_wx_home_movie_list">
+  <div class="main-block">
+    <div class="avatar" sort-flag="">
+      
+      <div class="default-img-bg">
+        
+        <img src="https://p0.meituan.net/moviemachine/1e1974968c469a31df289b7cb939d0c01253315.png@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        
+      </div>
+    </div> 
+    <div class="mb-outline-b content-wrapper">
+
+      
+      <div class="column content">
+        <div class="box-flex movie-title">
+          <div class="title line-ellipsis ">骄傲的少年</div>
+          
+          
+        </div>
+
+        <div class="detail column">
+          
+            
+              <div class="wantsee line-ellipsis">
+                <span class="person">176</span>
+                <span class="p-suffix">人想看</span>
+              </div>							
+            	
+          
+
+           
+            <div class="actor line-ellipsis">主演: 王佳敏,郭广平</div>
+          
+
+          
+            <div class="actor line-ellipsis">2020-09-10上映</div>
+          
+                
+          
+        </div>
+      </div>
+
+      <div class="button-block" data-id="1359278">
+        
+          <div class="btn toggle-wish-btn" data-wishst=0 data-movieid=1359278 >
+            <span class="fix" data-bid="dp_wx_home_movie_btn">想看</span>
+          </div>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+     
+  </div>
+  
+            </div>
+          </div>
+          <div class="more"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-wrap classic">
+    <div class="swiper-header movie-ad">
+    </div>
+    <div class="tab-block">
+      <div class="tab-content">
+        <div class="page classic" data-hot=".classic">
+          <div class="list-wrap">
+            <div class="classic-movies">
+              <div class="classic-movies-list">
+    <a href="/movie/346210">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p1.meituan.net/moviemachine/a448ca6a5f4dafb88067722303ca0cfd96002.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">八佰</div>
+            <div class="english-title line-ellipsis">The Eight Hundred</div>
+            <div class="actors line-ellipsis">剧情,战争,历史</div>
+            <div class="show-info line-ellipsis">2020-08-21 09:00中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">9.2</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/489894">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/moviemachine/7e6118993dbf0f304ac1dad4667fddda207318.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">我在时间尽头等你</div>
+            <div class="english-title line-ellipsis">Love You Forever</div>
+            <div class="actors line-ellipsis">爱情,奇幻,喜剧</div>
+            <div class="show-info line-ellipsis">2020-08-25 10:00中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">7.8</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/1297466">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/movie/4720992f249ea2745288beeba37e5d41209062.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">釜山行2：半岛</div>
+            <div class="english-title line-ellipsis">부산행2-반도</div>
+            <div class="actors line-ellipsis">动作,惊悚</div>
+            <div class="show-info line-ellipsis">2020-07-15韩国上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">6.5</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/1218159">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/movie/396a1e77ff4ef838a1c697ffbc71a8bb2730189.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">荞麦疯长</div>
+            <div class="english-title line-ellipsis">Wild Grass</div>
+            <div class="actors line-ellipsis">剧情,爱情</div>
+            <div class="show-info line-ellipsis">2020-08-25中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">5.2</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/1230199">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/movie/cdb164c203fc0c2465278ddd165e91c84503798.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">小妇人</div>
+            <div class="english-title line-ellipsis">Little Women</div>
+            <div class="actors line-ellipsis">爱情,剧情</div>
+            <div class="show-info line-ellipsis">2020-08-25中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">8.8</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/3606">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/moviemachine/4755165ffd65eb737bb5160ea911e0fa343438.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">哈利·波特与魔法石</div>
+            <div class="english-title line-ellipsis">Harry Potter and the Philosopher&#39;s Stone</div>
+            <div class="actors line-ellipsis">奇幻,冒险</div>
+            <div class="show-info line-ellipsis">2020-08-14中国大陆重映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">9.2</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/1218273">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/movie/22857bface4d3e8586c8f45858d4fa92662013.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">误杀</div>
+            <div class="english-title line-ellipsis">Sheep Without a Shepherd</div>
+            <div class="actors line-ellipsis">剧情,犯罪</div>
+            <div class="show-info line-ellipsis">2019-12-13中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">9.4</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/1243792">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p1.meituan.net/movie/48942d3afc4241455e7057427dcb16d62460030.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">1917</div>
+            <div class="actors line-ellipsis">剧情,战争,历史</div>
+            <div class="show-info line-ellipsis">2020-08-07中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">8.7</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/344990">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p1.meituan.net/movie/efb0a5e3989f45c4f3e22108bcc27ed71037307.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">唐人街探案2</div>
+            <div class="english-title line-ellipsis">Detective Chinatown 2</div>
+            <div class="actors line-ellipsis">喜剧,动作,悬疑</div>
+            <div class="show-info line-ellipsis">2018-02-16中国大陆上映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">9.0</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a href="/movie/78341">
+      <div class="classic-movie">
+        <div class="avatar">
+          <img src="https://p0.meituan.net/moviemachine/94138dc0290a74b35786b6e3b8ece8607940668.jpg@1l_1e_1c_128w_180h" onerror="this.style.visibility='hidden'">		
+        </div>
+        <div class="movie-info">
+          <div class="title line-ellipsis">星际穿越</div>
+            <div class="english-title line-ellipsis">Interstellar</div>
+            <div class="actors line-ellipsis">剧情,科幻,冒险</div>
+            <div class="show-info line-ellipsis">2020-08-02中国大陆重映</div>
+        </div>
+        <div class="movie-score">
+            <div class="score line-ellipsis">
+              <span class="grade">9.3</span>
+              <span>分</span>
+            </div>
+        </div>
+      </div>
+    </a>
+              </div>
+            </div>
+          </div>
+          <div class="more"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-page=".shows" class="shows singleton page">
+	<div class="page-wrap">
+		<div class="shows-index"> 
+			<div class="list-wrap">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="city-list" class="city-list-container"></section>
+<div class="bottom-nav-bar">
+  <a href="/#movie" class="nav-icon-wrapper current" data-tab=".movie">
+    <span class="nav-icons" id="icon-movie"></span>
+    <span class="nav-text">电影/影院</span>
+  </a>
+  <a href="/asgard/app/video" class="nav-icon-wrapper" data-tab=".video">
+    <span class="nav-icons" id="icon-video"></span>
+    <span class="nav-text">视频</span>
+  </a>
+  <a href="/asgard/app/shortvideo" class="nav-icon-wrapper" data-tab=".shortvideo">
+    <span class="nav-icons" id="icon-shortvideo"></span>
+    <span class="nav-text">小视频</span>
+  </a>
+  <a href="//show.maoyan.com/qqw" class="nav-icon-wrapper" data-tab=".shows">
+    <span class="nav-icons" id="icon-show"></span>
+    <span class="nav-text">演出</span>
+  </a>
+  <a href="/myCenter" class="nav-icon-wrapper" data-tab=".my">
+    <span class="nav-icons" id="icon-mine"></span>
+    <span class="nav-text">我的</span>
+  </a>
+</div>
+  <div class="wish-toast" style="display: none">
+    <img class="toast-bg" src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/images/toast-bg.png">
+    <span class="tips"></span>
+  </div>  </div>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/zepto.bundle.min.js" crossorigin="anonymous"></script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/toast.bundle.min.js" crossorigin="anonymous"></script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/cookie.bundle.min.js" crossorigin="anonymous"></script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/confirm.bundle.min.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ window._jsonFlat = function(obj) {
+   if (!obj) {
+     return null;
+   }
+   var result = {};
+   function recurse(data, prop) {
+     var lowerProp = prop.toLowerCase().replace(/\-/g, '_'); //小写的key 神策只支持全小写的自定义属性key，并且不支持 - 
+     var toString = Object.prototype.toString;
+     if (toString.call(data) === '[object Object]') {
+       var isEmpty = true;
+       for (var p in data) {
+         isEmpty = false;
+         if (p.indexOf('_') !== 0) { // 排除掉以 "_" 开头的字段 因为神策不支持_开头的
+           recurse(data[p], p);
+         }
+       }
+       if (isEmpty && lowerProp) { //当data不是{}并且prop不是""时，才对result操作
+         result[lowerProp] = '{}';
+       }
+     } else {
+       lowerProp = lowerProp || 'noname_key'; //给一个默认的key名
+       result[lowerProp] = JSON.stringify(data); //所有value都转成string
+     }
+   }
+   //立即执行
+   recurse(obj, '');
+   return result;
+ }
+ //为了统一处理业务页面上手动上报的各种灵犀埋点
+ function once(fn, context) {
+   var result;
+   return function() {
+     if(fn) {
+       result = fn.apply(context || this, arguments);
+       fn = null;
+     }
+     return result;
+   };
+ }
+ once(function() {
+   window._originalAnalytics = Analytics;
+   window.Analytics = function() {
+     //为了不破坏原始window.Analytics的初始化功能 还原初始化灵犀的几个操作
+     _originalAnalytics.apply(this, arguments);
+     
+     //上报神策
+     var type = arguments[0],
+         obj = arguments[1];
+     if(type === 'event') { //正常情况 type为event时，参数都是传2个，这里就不再判断arguments.length必须为2了。
+        if (obj && obj.val_bid) {
+          try {
+            var sendData = Object.assign({
+              action_id: obj.val_bid,
+              val_cid: window.cid,
+            }, _jsonFlat(obj.val_lab));
+            if (obj.event_type === 'view') {
+              //同步上报神策 元素展示事件
+              if (sensors) sensors.track('WebViewDisplay', sendData);
+            } else {
+              //同步上报神策 元素点击事件
+              if (sensors) sensors.track('WebViewClick', sendData);
+            }
+          } catch (err) { console.log(err) }
+        }
+     }
+   }
+ })
+
+ // 上报用户关系
+ function bindUserId(anonymousId, token) {
+   var api = '/sensorsproxy/account/v1/maoyanAppSensorsDataBindId';
+   var param = {
+     anonymousId: anonymousId,
+     token: token,
+     apiVersion: 'v1',
+   };
+   var isLock = false; // 是否锁定调用
+   var num = 0; // 循环调用的次数
+   var numMax = 3; // 允许循环的最大次数
+   var intervalSeconds = 3 * 1000; // 3秒
+   /**
+    * 神策数据绑定匿名id和用户id
+    */
+   var loopBind = function() {
+     if (num >= numMax) {
+       //次数超了
+       interval && clearInterval(interval);
+       return;
+     }
+     if (!isLock) {
+       //当前没有接口调用
+       isLock = true;
+       num++;
+       $.ajax({
+         type: 'POST',
+         url: api,
+         data: param,
+         dataType: 'form',
+         timeout: 2000,
+         success: function(res) {
+           if (res.body && res.body.success && !res.body.error) {
+             interval && clearInterval(interval);
+           }
+           isLock = false;
+         },
+         error: function(xhr, type){
+           isLock = false;
+         }
+       })
+     }
+   };
+   // 设置定时器
+   var interval = setInterval(loopBind, intervalSeconds);
+   // 立即执行1次
+   loopBind();
+ }
+
+ // 绑定用户关系
+ if (window._token && window.sensors) {
+   bindUserId(window.sensors.quick('getAnonymousID'), window._token);
+ }
+
+ $(window).on('click', '[data-bid]', function(){
+   var bid = $(this).data('bid');
+   var lab = $(this).data('lab');
+   if((typeof lab) !== 'object'){
+     lab = eval('(' + lab + ')');
+   }
+   var data = {
+     nm : 'mge',
+     val_bid: bid,
+     val_cid: window.cid,
+     event_type: 'click'
+   }
+   if(lab){
+     data.val_lab = lab;
+   }
+   Analytics('event', data);
+ });
+</script>
+
+<script>
+    window.allowRefund = true;
+    window.endorse = true;
+    window.snack = true;
+    window.vipTag = true;
+    window.cityBar = true;
+</script>
+
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/common.ef7f873f.js" crossorigin="anonymous"></script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/index-seo.034b79ce.js" crossorigin="anonymous"></script>
+<script src="//s0.meituan.net/bs/?f=myfe/canary:/static/deploy/dpmmweb/download-bar.bb9f5219.js" crossorigin="anonymous"></script>
+</body>
+</html>
