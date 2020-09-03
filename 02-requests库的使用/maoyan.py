@@ -60,7 +60,7 @@ def main():
     for page in range(0, 100, 10):
         url = 'https://maoyan.com/board/4?offset=' + str(page)
         html = get_one_page(url)
-        print(html)
+        # print(html)
         items = parse_one_page(html)
         for each in items:
             print(each)
