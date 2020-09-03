@@ -11,6 +11,7 @@ import os
 import logging
 import requests
 
+from lxml import etree
 from pyquery import PyQuery as pq
 from fake_useragent import UserAgent
 
@@ -44,11 +45,7 @@ def scrapy_index(page, header):
 
 
 def parse_index(index_html):
-    doc = pq(index_html)
-    links = doc('#pins > li > a')
-    for link in links:
-        detail_url = link.attrib['href']
-        yield detail_url
+    return etree.HTML(index_html).xpath('//ul[@id="pins"]/li/span[1]/a/@href')
 
 
 def parse_detail_html(detail_html):
@@ -85,5 +82,5 @@ def scrapy(page):
 
 
 if __name__ == '__main__':
-    for page_ in range(3, 255):
+    for page_ in range(1, 255):
         scrapy(page_)
