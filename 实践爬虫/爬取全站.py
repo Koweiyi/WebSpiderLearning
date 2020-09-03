@@ -13,11 +13,6 @@ logging.basicConfig(level=logging.INFO,
 
 
 def User_Agent(page):
-    """
-    :param page:
-    :return:
-    """
-
     header = {"User-Agent": UserAgent().random,
               'Referer': f'https://www.mzitu.com/page/{page}/'}
     return header
@@ -84,7 +79,7 @@ def scrape_picture(url, page, header, title):
         f.write(response)
 
 
-def main(page):
+def scrapy(page):
     header = User_Agent(page)
     index_html = scrape_index(page, header)
     detail_urls = parse_index(index_html)
@@ -101,5 +96,5 @@ def main(page):
 
 if __name__ == '__main__':
     for page_ in range(2, 3):
-        main(page_)
+        scrapy(page_)
     time.sleep(1)

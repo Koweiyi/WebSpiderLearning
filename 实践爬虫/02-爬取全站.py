@@ -44,9 +44,8 @@ def scrapy_index(page, header):
 
 
 def parse_index(index_html):
-    # print(index_html)
     doc = pq(index_html)
-    links = doc('#pins > li > span:nth-child(2) > a')
+    links = doc('#pins > li > a')
     for link in links:
         detail_url = link.attrib['href']
         yield detail_url
