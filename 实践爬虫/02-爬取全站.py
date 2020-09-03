@@ -72,15 +72,15 @@ def scrapy(page):
     for detail_url in detail_urls:
         detail_html = scrapy_page(detail_url, header)
         pic_max, title = parse_detail_html(detail_html)
-        print(title)
         if not os.path.exists(title):
             os.mkdir(title)
-        for i in range(1, pic_max + 1):
-            pic_html_url = detail_url + '/' + str(i)
-            pic_html = scrapy_page(pic_html_url, header)
-            parse_pic_html(pic_html, i, title, header)
+            print(title)
+            for i in range(1, pic_max + 1):
+                pic_html_url = detail_url + '/' + str(i)
+                pic_html = scrapy_page(pic_html_url, header)
+                parse_pic_html(pic_html, i, title, header)
 
 
 if __name__ == '__main__':
-    for page_ in range(1, 255):
+    for page_ in range(3, 255):
         scrapy(page_)
