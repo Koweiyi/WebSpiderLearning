@@ -3,7 +3,7 @@
 @version: 1.0.0
 author: 孔维一
 @time: 2020/09/03
-@file: 02-爬取全站.py
+@file: 02-爬取妹子图全站.py
 @function:
 @modify:
 """
