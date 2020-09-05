@@ -3,4 +3,7 @@
 *.txt
 *.json
 *.csv
+*.xml
+*.meta
+*.zip
 

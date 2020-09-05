@@ -8,5 +8,17 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@localhost:1521:oraclekwy</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="@Mongo" uuid="5d28a77a-99ba-4e10-bfab-20bbf53e474b">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://localhost:27017/admin</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="conn_spiders" uuid="25e40cd2-0918-4417-87d6-6fc9f6a7205d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/spiders</jdbc-url>
+    </data-source>
   </component>
 </project>
